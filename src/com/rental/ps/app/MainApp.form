@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.rental.ps.app.MainApp">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="639" height="467"/>
+    </constraints>
+    <properties>
+      <background color="-14143952"/>
+      <font name="Poppins"/>
+      <foreground color="-393219"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="6e723" binding="mainTabbedPane">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14143952"/>
+          <font name="Poppins Black"/>
+          <foreground color="-393219"/>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="87e71" binding="notaPanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <tabbedpane title="NOTA"/>
+            </constraints>
+            <properties>
+              <background color="-14143952"/>
+              <font name="Poppins"/>
+              <foreground color="-393219"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="11bac" binding="notaAddPanel" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="5" bottom="10" right="5"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                </properties>
+                <border type="etched"/>
+                <children>
+                  <component id="622ff" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="ID PS"/>
+                    </properties>
+                  </component>
+                  <component id="80c6d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Jenis Nota"/>
+                    </properties>
+                  </component>
+                  <component id="e43b5" class="javax.swing.JComboBox" binding="idPsBoxInput">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                    </properties>
+                  </component>
+                  <component id="14d08" class="javax.swing.JComboBox" binding="jenisNotaBox">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                    </properties>
+                  </component>
+                  <component id="9032a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Tanggal Sewa"/>
+                    </properties>
+                  </component>
+                  <component id="7f0bc" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Tanggal Kembali"/>
+                    </properties>
+                  </component>
+                  <component id="16c47" class="javax.swing.JTextField" binding="tglSewaInput">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="6db61" class="javax.swing.JTextField" binding="tglKembaliInput">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="b30c3" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Nama Pelanggan"/>
+                    </properties>
+                  </component>
+                  <component id="45909" class="javax.swing.JTextField" binding="pelangganInput">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                      <foreground color="-16777216"/>
+                    </properties>
+                  </component>
+                  <component id="733bf" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Nama Pegawai"/>
+                    </properties>
+                  </component>
+                  <component id="d4756" class="javax.swing.JComboBox" binding="pegawaiBox">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                      <foreground color="-16777216"/>
+                    </properties>
+                  </component>
+                  <component id="f0b3b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Durasi Sewa"/>
+                    </properties>
+                  </component>
+                  <component id="523ac" class="javax.swing.JTextField" binding="durasiInput">
+                    <constraints>
+                      <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="31ddb" binding="notaBtnPanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="b034a" class="javax.swing.JButton" binding="delNotaBtn">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="DELETE"/>
+                    </properties>
+                  </component>
+                  <component id="f0837" class="javax.swing.JButton" binding="updateNotaBtn">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="UPDATE"/>
+                    </properties>
+                  </component>
+                  <component id="1b10b" class="javax.swing.JButton" binding="addNotaBtn">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="ADD"/>
+                    </properties>
+                  </component>
+                  <hspacer id="5bb3">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="4e73b">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="9b14b" binding="notaTablePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="6c331">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins"/>
+                      <foreground color="-16777216"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="7e55f" class="javax.swing.JTable" binding="notaTable">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-16777216"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <component id="5a37b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Poppins Black"/>
+                  <foreground color="-3126272"/>
+                  <text value="Tambah Data Nota"/>
+                </properties>
+              </component>
+              <component id="6d48f" class="javax.swing.JButton" binding="REFRESHButton1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16723940"/>
+                  <font name="Poppins" style="1"/>
+                  <foreground color="-393219"/>
+                  <text value="REFRESH"/>
+                </properties>
+              </component>
+              <hspacer id="f9392">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="7deb7">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="bee39">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="434b" binding="psPanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <tabbedpane title="UNIT PS"/>
+            </constraints>
+            <properties>
+              <background color="-14143952"/>
+              <font name="Poppins"/>
+              <foreground color="-393219"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="f4778" binding="psAddPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="5" bottom="10" right="5"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                  <foreground color="-393219"/>
+                </properties>
+                <border type="etched"/>
+                <children>
+                  <component id="e0658" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Tipe"/>
+                    </properties>
+                  </component>
+                  <component id="3cb70" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Harga"/>
+                    </properties>
+                  </component>
+                  <component id="fc0f2" class="javax.swing.JTextField" binding="tipeInput">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                      <foreground color="-16777216"/>
+                    </properties>
+                  </component>
+                  <component id="2ea1d" class="javax.swing.JTextField" binding="hargaInput">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                      <foreground color="-16777216"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="72bb1" binding="psBtnPanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                  <foreground color="-393219"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="c06e1" class="javax.swing.JButton" binding="delPsBtn">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="DELETE"/>
+                    </properties>
+                  </component>
+                  <component id="8e375" class="javax.swing.JButton" binding="updatePsBtn">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="UPDATE"/>
+                    </properties>
+                  </component>
+                  <component id="de769" class="javax.swing.JButton" binding="addPsBtn">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="ADD"/>
+                    </properties>
+                  </component>
+                  <hspacer id="ce3fa">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="24670">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="187d4" binding="psTablePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                  <foreground color="-393219"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="5ca6b">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14143952"/>
+                      <foreground color="-16777216"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="51339" class="javax.swing.JTable" binding="psTable">
+                        <constraints/>
+                        <properties>
+                          <font name="Poppins"/>
+                          <foreground color="-16777216"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <component id="642fa" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Poppins ExtraBold" size="12" style="1"/>
+                  <foreground color="-3126272"/>
+                  <text value="Tambah Data PlayStation"/>
+                </properties>
+              </component>
+              <component id="e69a9" class="javax.swing.JButton" binding="REFRESHButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16723940"/>
+                  <font name="Poppins" style="1"/>
+                  <foreground color="-393219"/>
+                  <text value="REFRESH"/>
+                </properties>
+              </component>
+              <hspacer id="edd39">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="359a1">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="ba4d7">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="2ade7" binding="staffPanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <tabbedpane title="STAFF"/>
+            </constraints>
+            <properties>
+              <background color="-14143952"/>
+              <font name="Poppins"/>
+              <foreground color="-393219"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="5fad4" binding="addStaffPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="5" bottom="10" right="5"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                  <font name="Poppins" size="12" style="1"/>
+                  <foreground color="-3126272"/>
+                </properties>
+                <border type="etched">
+                  <size top="20" left="20" bottom="20" right="20"/>
+                </border>
+                <children>
+                  <component id="10ca4" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Nama"/>
+                    </properties>
+                  </component>
+                  <component id="2f572" class="javax.swing.JTextField" binding="namaInput">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                    </properties>
+                  </component>
+                  <component id="e3d7c" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Email"/>
+                    </properties>
+                  </component>
+                  <component id="5e86f" class="javax.swing.JTextField" binding="emailInput">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                    </properties>
+                  </component>
+                  <component id="34d56" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="Password"/>
+                    </properties>
+                  </component>
+                  <component id="b2589" class="javax.swing.JPasswordField" binding="passInput">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins" size="12"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="47cc7" binding="staffBtnPanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                  <foreground color="-3126272"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="2e9c" class="javax.swing.JButton" binding="delStaffBtn">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="DELETE"/>
+                    </properties>
+                  </component>
+                  <component id="5e69c" class="javax.swing.JButton" binding="updateStaffBtn">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="UPDATE"/>
+                    </properties>
+                  </component>
+                  <component id="202b4" class="javax.swing.JButton" binding="addStaffBtn">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3126272"/>
+                      <font name="Poppins" style="1"/>
+                      <foreground color="-393219"/>
+                      <text value="ADD"/>
+                    </properties>
+                  </component>
+                  <hspacer id="261c0">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="b04d7">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="9d47a" binding="staffTablePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14143952"/>
+                  <foreground color="-3126272"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="50f29">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Poppins"/>
+                      <foreground color="-16777216"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="6c43a" class="javax.swing.JTable" binding="staffTable">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-16777216"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <component id="872e5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Poppins Black" size="12" style="1"/>
+                  <foreground color="-3126272"/>
+                  <text value="Tambah Data Staff"/>
+                </properties>
+              </component>
+              <vspacer id="7ef09">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="b73dd">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="9ad9b" class="javax.swing.JButton" binding="refreshStaffBtn">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16723940"/>
+                  <font name="Poppins" style="1"/>
+                  <foreground color="-393219"/>
+                  <text value="REFRESH"/>
+                </properties>
+              </component>
+              <hspacer id="547cc">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="b9984" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Poppins ExtraBold" size="16"/>
+          <foreground color="-3126272"/>
+          <text value="APLIKASI RENTAL PS"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
