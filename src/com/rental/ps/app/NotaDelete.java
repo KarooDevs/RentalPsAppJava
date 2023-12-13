@@ -49,7 +49,7 @@ public class NotaDelete {
   }
   private void valueIdNota() {
     try {
-      preparedStatement = Connector.ConnectDB().prepareStatement("SELECT id_ps FROM tb_ps;");
+      preparedStatement = Connector.ConnectDB().prepareStatement("SELECT id_nota FROM tb_nota;");
       resultSet = preparedStatement.executeQuery();
 
       List<String> idNotaList = new ArrayList<>();
